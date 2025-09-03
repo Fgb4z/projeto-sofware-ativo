@@ -52,5 +52,5 @@ jobs:
           script: |
             docker stop stocks
             docker rm --force stocks
-            docker run -d -p 8080:8080 --network=rede --name stocks fgb4z/stocks-ci:${{ github.sha }}
+            docker run -d -p 8080:8080 --name stocks fgb4z/stocks-ci:${{ github.sha }}
                   
